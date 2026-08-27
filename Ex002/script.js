@@ -39,5 +39,9 @@ function BtnVerPressed() {
 }
 
 function BtnRanPressed() {
-
+        for(var i =1; i <= 8; i++) {
+            var RandomNumber = Math.floor(Math.random() * 1000) + 1;
+            document.querySelector('input#v' + i).value = RandomNumber;
+        }
+        BtnVerPressed();
 }
