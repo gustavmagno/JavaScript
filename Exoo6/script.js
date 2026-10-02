@@ -85,9 +85,6 @@ function calcularDistancia(lat1, lon1, lat2, lon2) {
     return RaioTerraEmKm * c;
 }
 
-
-
-
 inputEstado.addEventListener("input", () => {
     const SiglaEstado = EstadosMapeamento[inputEstado.value];
 
