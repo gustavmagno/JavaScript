@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Cálculo Distância</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="Color">
-    <h1>Hora do Dia</h1>
-    <div class="hora">
-        <p>Agora são <p id="HoraAtual">13</p>horas </p>
-    <img src="" alt="" id="img1">
+<body>
+    <h1>Distância entre a sua cidade e Mossoró/RN</h1>
+    <div class="inputs">
+
+        <h3>Qual o seu nome?</h3>
+        <input type="text" id="inpNomeAluno" placeholder="Insira o seu nome">
+
+        <h3>Qual o estado?</h3>
+        
+        <input id="inpEstado" list="lista-estados" placeholder="Clique e escolha o estado" autocomplete="off">
+        <datalist id="lista-estados"></datalist>
+
+        <h3>Qual a sua cidade?</h3>
+        
+        <input id="inpCidade" list="lista-cidades" placeholder="Clique e escolha a cidade" autocomplete="off" disabled>
+        <datalist id="lista-cidades"></datalist>
     </div>
-    <source src="script.js" type="">
+    <div>
+        <input type="button" value="Confime" id="btnConfirma">
+        <p id="res1"></p>
+        <p id="res2"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
