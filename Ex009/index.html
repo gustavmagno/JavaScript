@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!---->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estacionamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>O valor da hora é: R$15,00.</p>
+    <form action="">
+        <label for="HorarioEntrada">Horário de Entrada:</label>
+        <input type="time" name="HorarioEntrada" id="HorarioEntrada" required>
+        <label for="HorarioSaida">Horário de Saída:</label>
+        <input type="time" name="HorarioSaida" id="HorarioSaida" required>
+        <button type="button" id="ConfirmaHorario">Confirmar</button>
+    </form>
+    <p id="ValorTotal"></p>
+    <script src="script.js"></script>
+</body>
+</html>
