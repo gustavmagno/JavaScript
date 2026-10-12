@@ -16,13 +16,14 @@ async function RecebeValorMoedas () {
 }
 
 async function click () {
-    const ValorRupia = await RecebeValorMoedas();
     const MontanteDolar = Number(inputDolarAmericano.value);
-    const ValorTotalRupia = ValorRupia * MontanteDolar;
-
+    
     if (!MontanteDolar || MontanteDolar <= 0) {
-            ValorConvertido.textContent = `Insira um valor em Dolar`;
+            ValorConvertido.textContent = `Insira um valor maior que zero.`;
     } else {
+            const ValorRupia = await RecebeValorMoedas();
+            const ValorTotalRupia = ValorRupia * MontanteDolar;
+            
             ValorConvertido.textContent = `O valor total de dólares em rúpia indiana é de: ${ValorTotalRupia.toLocaleString('pt-br', { style: 'currency', currency: 'INR'})}`;
         }
 }
